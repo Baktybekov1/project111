@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой сайт</title>
+</head>
+<body>
+    <h1>🚀 Мои тренировки</h1>
+
+    {% for workout in workouts %}
+        <h3>{{ workout.title }}</h3>
+        <p>{{ workout.description }}</p>
+        <hr>
+    {% empty %}
+        <p>Пока нет тренировок</p>
+    {% endfor %}
+
+</body>
+</html>

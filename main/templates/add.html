@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавить тренировку</title>
+</head>
+<body>
+
+<h1>Добавить тренировку</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сохранить</button>
+</form>
+
+<a href="/">Назад</a>
+
+</body>
+</html>
